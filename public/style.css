@@ -1,0 +1,160 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.task {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+    margin: 0;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.delete-btn {
+    background-color: #f44336;
+}
+
+.delete-btn:hover {
+    background-color: #e41e1e;
+}
+
+.edit-btn {
+    background-color: #ffa500;
+}
+
+.edit-btn:hover {
+    background-color: #e68900;
+}
+
+.task-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.task-item {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+.task-item:hover {
+    transform: translateY(-5px);
+}
+
+.task-item .box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    width: 60%;
+}
+
+.task-label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.task-description {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.no-tasks-message {
+    font-size: 18px;
+    color: #888;
+    text-align: center;
+    font-weight: bold;
+}
+
+.task-checkbox {
+    margin-right: 15px;
+    cursor: pointer;
+}
+@media (max-width: 600px) {
+    h3 {
+        font-size: 20px;
+    }
+    form {
+        flex-wrap: wrap;
+    }
+
+    .task {
+        width: 90%;
+        margin-bottom: 8px;
+    }
+
+    button {
+        width: 25vw;
+    }
+    .edit-btn,.delete-btn{
+        padding: 5px;
+        width: 15vw;
+    }
+
+    .task-label {
+        font-size: 16px;
+    }
+
+    .task-description {
+        font-size: 12px;
+    }
+
+    .task-container {
+        margin-top: 10px;
+        gap: 10px;
+    }
+    .task-item {
+        padding: 10px;
+    }
+}
